@@ -167,7 +167,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         dataViewController.dataObject = self.pageData.value[index].pageData
             dataViewController.type = .webview
         if (pageData.value.count > 0) {
-            dataViewController.pageNb_ = "\(index+1)/\(pageData.value.count)"
+            dataViewController.pageNb_ = "page \(index+1)/\(pageData.value.count)"
         }
         return dataViewController
     }
